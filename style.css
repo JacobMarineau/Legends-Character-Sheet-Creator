@@ -1,46 +1,152 @@
+/* General styles */
+
+/* Applies basic font and background styling to the entire page */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif; /* Sets the font for the whole page */
+  background-color: #f4f4f4; /* Light gray background color */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
 }
 
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Styles for the header section */
+header {
+  background: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 10px 0; /* Vertical padding for space above and below the header content */
+  text-align: center; /* Center-aligns the text within the header */
 }
 
-h1 {
-    text-align: center;
+/* Styles for the main content area */
+main {
+  padding: 20px; /* Padding around the main content area */
 }
 
-#race-selector {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 20px;
+/* Styles for form elements */
+form {
+  background: #fff; /* White background for the form */
+  padding: 20px; /* Padding inside the form */
+  border-radius: 8px; /* Rounded corners for the form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow to give a lifted appearance */
 }
 
-#race-info {
-    margin-top: 20px;
+/* Styles for each section inside the form */
+section {
+  margin-bottom: 20px; /* Space below each section */
 }
 
-h2 {
-    color: #333;
+/* Styles for section headings */
+section h2 {
+  border-bottom: 2px solid #333; /* Underline for the heading */
+  padding-bottom: 10px; /* Space below the heading text */
+  margin-bottom: 15px; /* Space below the border */
 }
 
-p {
-    line-height: 1.6;
+/* Styles for labels */
+label {
+  display: inline-block; /* Ensures labels do not take up full width */
+  font-size: 0.875em; /* Slightly smaller font size for labels */
+  margin-right: 10px; /* Space to the right of labels */
+}
+/* Styles for just the majors labels */
+.majorLabel {
+  font-size: 20px; /* Increases label size */
+  font-weight: bold; /* Bold text for labels */
 }
 
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
+/* Styles for input fields and textareas */
+input, textarea {
+  padding: 8px; /* Padding inside input fields */
+  margin-bottom: 10px; /* Space below input fields */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners for input fields */
 }
 
-ul li {
-    margin-bottom: 10px;
+/* Styles for number inputs specifically */
+input[type="number"] {
+  width: 60px; /* Fixed width for number inputs to make them shorter */
+  display: inline-block; /* Allows other elements to be on the same line */
+  text-align: right; /* Aligns text to the right within the input */
 }
+
+/* Styles for buttons */
+button {
+  background: #333; /* Dark background color for buttons */
+  color: #fff; /* White text color */
+  padding: 10px 15px; /* Padding inside the button */
+  border: none; /* No border for the button */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover to indicate clickable button */
+}
+
+/* Styles for button hover state */
+button:hover {
+  background: #555; /* Lighter background color on hover */
+}
+
+/* Container for all content */
+#container {
+  max-width: 900px; /* Maximum width for the container */
+  margin: 50px auto; /* Center the container horizontally and add top/bottom margin */
+  padding: 20px; /* Padding inside the container */
+  background-color: #fff; /* White background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+}
+
+/* Styles for attribute and minor stat sections */
+.attribute, .minor-stat {
+  margin-bottom: 15px; /* Space below each attribute and minor stat section */
+}
+
+/* Styles for labels within attribute and minor stat sections */
+.attribute label, .minor-stat label {
+  width: 120px; /* Fixed width for labels */
+}
+
+/* Styles for input fields within attribute and minor stat sections */
+.attribute input, .minor-stat input {
+  width: 60px; /* Short width for input fields */
+  display: inline-block; /* Allows labels and inputs to be on the same line */
+}
+
+/* Styles for span elements within attribute and minor stat sections */
+.attribute span, .minor-stat span {
+  display: inline-block; /* Ensures spans align with other elements */
+  margin-left: 10px; /* Space to the left of spans */
+  color: #555; /* Dark gray color for text */
+  font-size: 0.875em; /* Font size matching the labels */
+}
+
+/* Add "Modifier: " text before the content of span elements */
+.attribute span:before, .minor-stat span.minor-stat-modifier:before {
+  content: "Modifier: "; /* Text before the span content */
+  font-weight: bold; /* Makes the "Modifier: " text bold */
+}
+
+/* Styles for the container holding minor stats */
+.minor-stats {
+  margin-top: 10px; /* Space above the minor stats container */
+}
+
+/* Styles for each minor stat block */
+.minor-stat {
+  margin-bottom: 5px; /* Space below each minor stat block */
+}
+
+/* Ensure minor stat labels align with major stat labels */
+.minor-stat label {
+  width: 120px; /* Fixed width for minor stat labels */
+}
+
+/* Shorter width for minor stat input fields */
+.minor-stat input {
+  width: 60px; /* Short width for minor stat inputs */
+}
+
+/* Styles for the modifier text in minor stats */
+.minor-stat-modifier {
+  display: inline-block; /* Ensures modifier text aligns with input */
+  margin-left: 10px; /* Space to the left of the modifier text */
+  color: #555; /* Dark gray color for text */
+  font-size: 0.875em; /* Font size matching the labels */
+}
+
